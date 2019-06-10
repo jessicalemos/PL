@@ -1,0 +1,152 @@
+%language PT EN FR
+%baselang EN
+%inv NT BT
+%inv USE UF
+%inv INST IOF
+%inv IOF INST
+%inv HAS IN
+%inv IN HAS
+%inv DOMINIO TERMINOLOGIAESPECIFICA
+%inv TERMINOLOGIA_ESPECIFICA DOMINIO
+%inv PASSALA PASSAEM
+%inv PASSAEM PASSALA
+%inv FOZ_DE FOZ
+%inv FOZ FOZ_DE
+%inv NASCE NASCENTE_DE
+%inv NASCENTE_DE NASCE
+%inv PROFISSAOASSOCIADA LIDACOM
+%inv LIDACOM PROFISSAOASSOCIADA
+%inv TOCADORDE TOCADOPOR
+%inv TOCADOPOR TOCADORDE
+
+animal
+PT animal
+NT cat, cow, fish, ant, camel
+BT Life being
+
+cat
+PT gato
+EN cat
+SN animal que tem sete vidas e meia
+
+cow
+FR vache
+PT vaca
+BT animal
+SN animal que da leite
+
+strawberry
+FR fraise
+BT fruit
+
+orange
+PT laranja
+DOMINIO botânica
+BT fruit
+NS plant
+IOF plant
+
+pasta
+PT massa
+FR masse
+UF tart
+NT pastry, spaghetti, pappardelle 
+NT farfalle
+
+tart
+PT tarte
+DOMINIO cuisine
+USE strawberry, pasta
+SN prato feito com uma base de massa
+IOF candy
+
+chocolate cake
+DOMINIO cuisine
+IOF candy, cake
+
+chocolate brigadier
+DOMINIO cuisine
+IOF candy
+
+San Francisco
+PT São Francisco
+IN	United States of America
+IOF	city
+
+Lisbon
+PT lisboa
+IN portugal
+IOF city
+PASSALA tejo river
+
+tejo river
+PASSAEM Lisbon
+IN portugal
+IOF river
+
+douro river
+IN portugal, espanha
+IOF river
+NASCE Serra do Urbião
+FOZ Porto
+PASSAEM Régua, Miranda do Douro, Barragem do Pocinho
+
+brain
+PT cerebro 
+IOF organ
+
+large intestine
+PT intestino grosso
+IOF organ
+IN digestive tract
+SN Responsável pelo importante processo de absorção da água
+
+heart
+IOF organ
+IN circulatory system
+PROFISSAOASSOCIADA cardiologist
+
+human body
+PT corpo humano
+HAS arm, organ, skin, leg, head, muscle
+TERMINOLOGIAESPECIFICA arm bones, arm, digestive tract, veins, human body
+DOMINIO human body
+
+organ
+PT orgão
+DOMINIO human body
+INST heart, brain, kidney, lungs
+IN human body
+
+career
+NT cardiologist, dentist, nurse, teacher
+INST sociologist, doctor
+
+cardiologist
+DOMINIO medicine
+LIDACOM heart
+BT career, medical specialist
+
+Alessandro Piccinini
+IOF composer
+
+musicien
+IOF career
+NT pianist, drummer, singer
+LIDACOM music
+
+music
+PROFISSAOASSOCIADA musicien
+
+pianist
+TOCADORDE piano
+BT musicien
+
+musical instrument
+PT instrumento musical
+NT key instrument, string instrument
+INST piano, violin, drums
+
+piano
+TOCADOPOR pianist
+IOF musical instrument, key instrument

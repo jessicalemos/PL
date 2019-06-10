@@ -1,0 +1,14 @@
+%language PT EN
+%baselang EN
+%inv NT BT
+
+animal
+PT animal
+NT cat, dog, cow, fish, ant, camel
+BT Life being
+
+cat
+PT gato
+EN cat
+BT animal
+SN animal que tem sete vidas e meia

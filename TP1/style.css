@@ -1,0 +1,19 @@
+h1,h2,h5,h6,ul {
+    text-align: center;
+}
+h3 {
+    text-align: center; 
+    color:#343a40;
+}
+tags {
+    list-style: none;
+    text-align: center;
+    margin-right: 2%;
+}
+tags tag{
+    display: inline;
+    padding: 0 10px;
+}
+tags tag:first-child{
+    border-left: none;
+}
